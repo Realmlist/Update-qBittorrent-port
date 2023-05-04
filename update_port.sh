@@ -6,6 +6,16 @@ QBITTORRENT_PORT=8080;
 
 LOG_FILE=/config/natpmp/port.log
 
+if [ ! -e "$LOG_FILE" ] ; then
+    mkdir -p /config/natpmp
+    touch "$LOG_FILE"
+fi
+
+if [ ! -w "$LOG_FILE" ] ; then
+    echo cannot write to $LOG_FILE
+    exit 1
+fi
+
 timestamp() {
     date '+%Y-%m-%d %H:%M:%S'
 }
