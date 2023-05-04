@@ -24,7 +24,7 @@ qbt_changeport(){
 #Function which uses natpmp to determine the active port
 findactiveport()
 {
-    python3 /config/natpmp/natpmp_client.py -g 10.2.0.1 0 0 | grep -oP '(?<=public port ).*(?=,)' | xargs;
+    python3 /app/natpmp/natpmp_client.py -g 10.2.0.1 0 0 | grep -oP '(?<=public port ).*(?=,)' | xargs;
 }
 
 #Execute the above functions and set variables
