@@ -1,6 +1,11 @@
 #!/bin/bash
 #Determine protonvpn port and update qBittorrent
 
+# Based on (read: copy-pasted from)
+# https://www.reddit.com/r/ProtonVPN/comments/10owypt/successful_port_forward_on_debian_wdietpi_using/
+# and
+# https://github.com/soxfor/qbittorrent-natmap/blob/main/data/start.sh
+
 QBITTORRENT_SERVER="localhost";
 QBITTORRENT_PORT=8080;
 
