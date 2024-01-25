@@ -1,6 +1,9 @@
 #!/bin/bash
 #Determine protonvpn port and update qBittorrent
 
+# OBSOLETE. NOW BUILT INTO HOTIO CONTAINER
+# SEE https://hotio.dev/containers/wireguard/
+
 # Based on (read: copy-pasted from)
 # https://www.reddit.com/r/ProtonVPN/comments/10owypt/successful_port_forward_on_debian_wdietpi_using/
 # and
